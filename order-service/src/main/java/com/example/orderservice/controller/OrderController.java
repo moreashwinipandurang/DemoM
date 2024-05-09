@@ -23,5 +23,10 @@ public class OrderController {
         return "Order placed sucessfully";
     }
 
+    @PostMapping
+    public String placeOrder1(@RequestBody OrderRequest orderRequest)
+    {
+        return "order Not placed";
+    }
 
 }
